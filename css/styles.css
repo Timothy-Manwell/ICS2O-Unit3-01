@@ -36,4 +36,6 @@ p {
 .img1 {
   float: right;
   margin-right: 15px;
+  width: 25%;
+  height: auto;
 }
