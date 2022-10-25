@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
 /**
  * This function calculates the area of a trapezoid
  */
- function enterClicked() {
+function enterClicked() {
   //input
   const baseA = parseInt(document.getElementById("base-a-of-trapezoid").value)
   const baseB = parseInt(document.getElementById("base-b-of-trapezoid").value)
