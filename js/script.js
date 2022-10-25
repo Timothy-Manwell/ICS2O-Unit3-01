@@ -10,14 +10,24 @@
  * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-Unit3-01/sw.js", {
+    scope: "/ICS2O-Unit3-01/",
   })
 }
 
 /**
- * This function displays an alert.
+ * This function calculates the area of a trapezoid
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+ function enterClicked() {
+  //input
+  const baseA = parseInt(document.getElementById("base-a-of-trapezoid").value)
+  const baseB = parseInt(document.getElementById("base-b-of-trapezoid").value)
+  const height = parseInt(document.getElementById("height-of-trapezoid").value)
+
+  //process
+  const area = ((baseA + baseB) / 2) * height
+
+  //output
+  document.getElementById("area-of-trapezoid").innerHTML =
+    "The area of the trapezoid is: " + area.toFixed(2) + " cm²."
 }

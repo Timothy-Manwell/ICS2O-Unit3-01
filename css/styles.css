@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: rgb(255 255 255);
 }
 
 p {
@@ -33,7 +33,7 @@ p {
   padding-top: 15pt;
 }
 
-img {
+.img1 {
   float: right;
   margin-right: 15px;
 }
